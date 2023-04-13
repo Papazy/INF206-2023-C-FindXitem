@@ -1,4 +1,5 @@
 
+
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@200;300;400;700;800&display=swap');
 
 
@@ -105,3 +106,308 @@ background-color: #b4b4b4;
     position: relative;
 
 }
+
+.landing-page {
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 2702px;
+    overflow: hidden;
+    padding: 58px 0;
+    width: 1440px;
+  }
+  
+  .hidden,
+  .hidden * {
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  .navbar {
+    align-items: center;
+    display: flex;
+    min-width: 1300px;
+  }
+  
+  .buttonlogin {
+    align-items: flex-start;
+    background-color: #6e40c9;
+    border-radius: 37px;
+    display: flex;
+    height: 46px;
+    justify-content: flex-end;
+    margin-left: 40px;
+    min-width: 107px;
+    padding: 9px 28px;
+  }
+  
+  .login-1 {
+    width: 48px;
+  }
+  
+  .landing-page .login-3 {
+    letter-spacing: 0;
+    min-height: 25px;
+    line-height: normal;
+  }
+  
+  .about-us {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-left: 70px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+  
+  .place {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-left: 544px;
+    min-height: 30px;
+    min-width: 60px;
+  }
+  
+  .buttonsingup {
+    align-items: flex-start;
+    background-color: #f7c873;
+    border-radius: 37px;
+    display: flex;
+    height: 46px;
+    justify-content: flex-end;
+    margin-left: 43px;
+    min-width: 107px;
+    padding: 8px 19px;
+  }
+  .sign-up {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 20px;
+    width: 68px;
+  }
+  
+  .barang {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-left: 70px;
+    min-height: 30px;
+    min-width: 74px;
+  }
+  
+  .find-xitem {
+    color: var(--black);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    min-height: 24px;
+    min-width: 105px;
+  }
+  
+  .overlap-group1 {
+    align-self: flex-start;
+    height: 912px;
+    margin-left: -148px;
+    margin-top: 123px;
+    position: relative;
+    width: 1622px;
+  }
+  
+  .buttonmulaicoding-1 {
+    align-items: flex-start;
+    background-color: var(--slimy-green);
+    display: flex;
+    left: 798px;
+    min-width: 139px;
+    padding: 9px 37px;
+    position: absolute;
+    top: 485px;
+  }
+  
+  .landing-page .buttonmulaicoding-2 {
+    border-radius: 37px;
+    height: 46px;
+  }
+  .login-2 {
+    width: 100px;
+  }
+  
+  .rectangle-3 {
+    background-color: #f0f88d;
+    height: 912px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1622px;
+  }
+  
+  .mencari-dan-melapork {
+    left: 798px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 226px;
+    width: 727px;
+  }
+  
+  .laporkan-barang-temuan-anda-disini {
+    left: 798px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 433px;
+    width: 375px;
+  }
+
+  
+  .group-1 {
+    background-image: url(Image/gambar1);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 485px;
+    left: 303px;
+    position: absolute;
+    top: 119px;
+    width: 435px;
+  }
+  
+  .landing-page .flex {
+    align-items: flex-start;
+    display: flex;
+  }
+  
+  .flex-row {
+    gap: 33px;
+    margin-left: 22px;
+    margin-top: 131px;
+    min-width: 1096px;
+  }
+  
+  .rectangle-4 {
+    height: 485px;
+    object-fit: cover;
+    width: 435px;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+    margin-top: 50px;
+    min-height: 238px;
+    width: 628px;
+  }
+  
+  .temukan-barang-anda-disini {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 22px;
+    min-height: 30px;
+  }
+  
+  .kehilangan-atau-mene {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 120px;
+    width: 628px;
+  }
+  .buttonmulaicoding-container {
+    margin-left: 5px;
+    margin-top: 20px;
+    position: relative;
+    width: 139px;
+  }
+  
+  .buttonmulaicoding {
+    align-items: flex-start;
+    background-color: var(--slimy-green);
+    border-radius: 37px;
+    display: flex;
+    min-width: 139px;
+    height: 46px;
+    left: 0;
+    padding: 9px 50px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .login {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 25px;
+    width: 38px;
+  }
+
+  /* Variables */
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --slimy-green: rgba(40, 170, 38, 1);
+    --purple-heart: rgba(110, 64, 201, 1);
+    --alto: rgba(217, 217, 217, 1);
+    --sunset-pearl: rgba(247, 200, 115, 1);
+    --desert-storm: rgba(248, 248, 248, 1);
+    --white: rgba(255, 255, 255, 1);
+    --font-size-s: 18px;
+    --font-size-m: 20px;
+    --font-size-1: 36px;
+    --font-size-x1: 40px;
+    --font-family-montserrat: "Montserrat";
+    --font-family-poppins: "Poppins";
+    }
+    
+    /* Classes */
+    .poppins-normal-black-36px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-1);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-black-18px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-desert-storm-18px {
+    color: var(--desert-storm);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-black-40px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-x1);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .montserrat-normal-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+    }
