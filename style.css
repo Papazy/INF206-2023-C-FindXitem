@@ -48,6 +48,10 @@ body{
     background-color: rgb(117, 90, 90);
 }
 
+button{
+    background: none;
+    border: none;
+}
 .btn{
     padding: 5px 15px;
     border: none;
@@ -56,6 +60,14 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     cursor: pointer;
+    background-color: #53d665;
+    text-decoration: none;
+    color:black;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
 }
 
 .btn.login{
@@ -148,4 +160,16 @@ background-color: #b4b4b4;
 }
 #submit:hover{
     background: #0036c9;
+}
+
+.content-not-found{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-not-found{
+    width: 400px;
+    filter: drop-shadow(5px 5px 5px #222)
 }
