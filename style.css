@@ -49,6 +49,10 @@ body{
     background-color: rgb(117, 90, 90);
 }
 
+button{
+    background: none;
+    border: none;
+}
 .btn{
     padding: 5px 15px;
     border: none;
@@ -57,6 +61,14 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     cursor: pointer;
+    background-color: #53d665;
+    text-decoration: none;
+    color:black;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
 }
 
 .btn.login{
@@ -107,6 +119,63 @@ background-color: #b4b4b4;
 
 }
 
+<<<<<<< HEAD
+.content{
+    margin-top: 75px;
+    /* background-color: #fff; */
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.deskripsi-input{
+    font-size: 0.7rem;
+}
+
+.input_field{
+    margin:15px 5px;
+}
+
+.input_field label{
+    font-size: 1.2rem;
+}
+
+.input_field input{
+    width: 30rem;
+    font-size: 1.2rem;
+    padding:5px 10px;
+    border-radius: 0;
+    border: solid 1px rgb(160, 160, 160);
+}
+
+#submit{
+    background: #1951eb;
+    border-radius: 25px ;
+    border:none ;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+
+}
+#submit:hover{
+    background: #0036c9;
+}
+
+.content-not-found{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-not-found{
+    width: 400px;
+    filter: drop-shadow(5px 5px 5px #222)
+}
+=======
 .landing-page {
     align-items: center;
     background-color: #fff;
@@ -411,3 +480,4 @@ background-color: #b4b4b4;
     font-weight: 400;
     font-style: normal;
     }
+>>>>>>> 095865bfd8a19147b465fee6acf793245756c42f
