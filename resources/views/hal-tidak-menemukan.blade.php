@@ -17,8 +17,8 @@
                     <a class="btnDropdown" href="#" onclick="toggle_dropdown()">Barang</a>
                     <div class="wrapper">
                         <div class="dropdown" id="dropdown">
-                        <a href="hal-pencarian.html">Mencari</a>
-                        <a href="hal-pelaporan.html">Melaporkan</a>
+                        <a href="hal-pencarian">Mencari</a>
+                        <a href="hal-pelaporan">Melaporkan</a>
                         <a href="#">Kategori</a>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
             <p>Coba masukkan deskripsi lain tentang barang anda</p>
             <p>Anda dapat menunggu notifikasi hingga barang anda ditemukan</p>
             <br>
-            <button ><a class="btn" href="hal-pencarian.html">Cari kembali</a></button>
+            <button ><a class="btn" href="hal-pencarian">Cari kembali</a></button>
         </div>
     </div>
 
