@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FindXitem</title>
+    <title>FindXitem | Melaporkan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,8 +17,8 @@
                     <a class="btnDropdown" href="#" onclick="toggle_dropdown()">Barang</a>
                     <div class="wrapper">
                         <div class="dropdown" id="dropdown">
-                        <a href="hal-pencarian.html">Mencari</a>
-                        <a href="hal-pelaporan.html">Melaporkan</a>
+                        <a href="hal-pencarian">Mencari</a>
+                        <a href="hal-pelaporan">Melaporkan</a>
                         <a href="#">Kategori</a>
                         </div>
                     </div>
@@ -44,32 +44,17 @@
             }
         }
     </script>
-
-    <div class="content">
-        <div class="container" >
-            <img src="img/kaca-pembesar.png" alt="Kaca pembesar" style="width:340px">
-            <div class="desc" >
-                <p style="font-size: 2rem;font-weight: 700;">FINDXITEM, Cari barangmu disini</p>
-                <p style="text-align: justify;">FindXitem adalah website terpercaya dalam menangani masalah kehilangan. Bekerja sama dengan Sektor Kepolisian Daerah. Temukan barang-barang berhargamu yang hilang disini</p>
-                
-                <br>
-                <button ><a class="btn" href="hal-pencarian.html">Mulai Cari</a></button>
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="container second" >
-            <div class="desc">
-                <p style="font-size: 2rem;font-weight: 700;">Laporkan barang temuan disini</p>
-                <p style="text-align: justify;">Terpercaya mengembalikan barang-barang yang hilang. Digunakan oleh kepolisian Indonesia dalam rangka mewujudkan negeri yang aman. Laporkan barang temuanmu disini</p>
-                
-                <br>
-                <button ><a class="btn" href="hal-pelaporan.html">Melaporkan</a></button>
-            </div>
-            <img src="img/barang-buku.png" alt="Kaca pembesar" style="width:340px">
+    <div class="content content-not-found">
+        <img class="img-not-found" src="img/no-result-found.png" alt="No-result-found img">
+        <div class="desc">
+            <p style="font-size: 2rem;font-weight: 700;">Maaf barang yang anda cari belum ditemukan</p>
+            <p>Coba masukkan deskripsi lain tentang barang anda</p>
+            <p>Anda dapat menunggu notifikasi hingga barang anda ditemukan</p>
+            <br>
+            <button ><a class="btn" href="hal-pencarian">Cari kembali</a></button>
         </div>
     </div>
 
+    
 </body>
 </html>
