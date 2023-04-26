@@ -9,4 +9,16 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+
+    public function showLanding(){
+        return view('landing-page',[
+            'title' => 'Cari barangmu disini'
+        ]);
+    }
+
+    public function search(){
+        return view('hal-pencarian',[
+            'title' => 'Search Page'
+        ]);
+    }
 }

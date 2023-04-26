@@ -23,6 +23,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navbar */
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -50,6 +52,7 @@ body{
 .navbar-item a{
     padding: 5px 15px;
     border-radius: 25px;
+    color:white;
     text-decoration: none;
 }
 
@@ -140,19 +143,23 @@ background-color: #b4b4b4;
 
 .deskripsi-input{
     font-size: 0.7rem;
+    color:white;
 }
 
 .input_field{
     margin:15px 5px;
+    color:white;
 }
 
 .input_field label{
     font-size: 1.2rem;
+    color:white;
 }
 
 .input_field input{
     width: 30rem;
     font-size: 1.2rem;
+    color:white;
     padding:5px 10px;
     border-radius: 0;
     border: solid 1px rgb(160, 160, 160);
