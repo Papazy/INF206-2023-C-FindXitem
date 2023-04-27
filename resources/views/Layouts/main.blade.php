@@ -9,7 +9,8 @@
 </head>
 <body>
     @include('Components.navbar')
-
-    @yield('container')
+    <div class="isi">
+        @yield('container')
+    </div>
 </body>
 </html>
