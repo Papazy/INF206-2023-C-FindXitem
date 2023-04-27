@@ -21,3 +21,6 @@ Route::get('/search', [Controller::class, 'search']);
 Route::get('/result', [Controller::class, 'result']);
 Route::get('/result2', [Controller::class, 'result']);
 // Route::get
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

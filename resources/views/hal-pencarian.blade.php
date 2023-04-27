@@ -1,7 +1,7 @@
 @extends('Layouts.main')
 
 @section('container')
-    <div class="content">
+    <div class="content bg-dark rounded p-5" style="--bs-bg-opacity:0.5">
         <p style="font-size: 2.5rem;margin-bottom: 20px;color:white;">Cari Barang Hilang</p>
         <form class="form" action="/result">
             <div class="form-grid">
@@ -33,7 +33,7 @@
                 </div>
             </div>
             
-            <p style="font-size: 2.5rem;margin: 10px;   ">Lokasi dan Waktu</p>
+            <p style="font-size: 2.5rem;margin: 10px; color:white">Lokasi dan Waktu</p>
             <div class="form-grid">
                 <div class="input_field">
                     <label for="">Lokasi kehilangan</label>

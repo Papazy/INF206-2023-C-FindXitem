@@ -1,6 +1,6 @@
 <div class="navbar">
     <div class="navbar-logo">FindXitem</div>
-    <div class="navbar-nav">
+    <div class="navbar-navi">
         <ul class="navbar-items-container">
             <li class="navbar-item"><a href="#">Home</a></li>
             <li class="navbar-item ">
@@ -14,9 +14,9 @@
                 </div>
             </li>
             <li class="navbar-item"><a href="#">About</a></li>
+            <button class="btn login me-2 rounded-pill">Masuk</button>
+            <button class="btn daftar ms-2 rounded-pill">Daftar</button>
         </ul>
-        <button class="btn login">Masuk</button>
-        <button class="btn daftar">Daftar</button>
     </div>
 </div>
 <script>

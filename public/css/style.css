@@ -37,13 +37,16 @@ body{
     color: white;
 }
 
-.navbar-nav{
+.navbar-navi{
     display: flex;
     gap:20px;
     align-items: center;
+    
 }
 .navbar-items-container{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -163,7 +166,7 @@ background-color: #b4b4b4;
 
 .input_field{
     margin:15px 5px;
-    color:white;
+    color:black;
 }
 
 .input_field label{
@@ -174,7 +177,7 @@ background-color: #b4b4b4;
 .input_field input{
     width: 30rem;
     font-size: 1.2rem;
-    color:white;
+    color:black;
     padding:5px 10px;
     border-radius: 0;
     border: solid 1px rgb(160, 160, 160);
