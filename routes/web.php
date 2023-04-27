@@ -18,4 +18,6 @@ Route::get('/',[Controller::class, 'showLanding']);
 
 Route::get('/search', [Controller::class, 'search']);
 
+Route::get('/result', [Controller::class, 'result']);
+Route::get('/result2', [Controller::class, 'result']);
 // Route::get

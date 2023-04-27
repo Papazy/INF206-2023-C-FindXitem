@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('barang', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('nama_barang');
+            $table->string('nama');
             $table->string('kategori');
-            $table->string('warna_Dasar');
+            $table->string('warna_dasar');
             $table->string('warna_sekunder');
             $table->string('Brand');
             $table->string('Lokasi');

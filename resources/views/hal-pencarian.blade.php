@@ -2,8 +2,8 @@
 
 @section('container')
     <div class="content">
-        <p style="font-size: 2.5rem;margin-bottom: 20px;">Cari Barang Hilang</p>
-        <div class="form">
+        <p style="font-size: 2.5rem;margin-bottom: 20px;color:white;">Cari Barang Hilang</p>
+        <form class="form" action="/result">
             <div class="form-grid">
 
                 <div class="input_field">
@@ -49,6 +49,7 @@
                 
             </div>
             <br>
+            {{-- 
             <p style="font-size: 2.5rem;margin: 10px;   ">Informasi Pengirim</p>
             <div class="form-grid">
                 <div class="input_field">
@@ -71,10 +72,12 @@
                 </div>
                 
             </div>
-
-
-        <input type="submit" name="submit"  id="submit" value="Submit">
-        </div>
+             --}}
+        
+            <div class="d-flex justify-content-end">
+            <input type="submit" name=""  id="submit" value="Submit" onclick>
+            </div>
+        </form>
         
     </div>
 

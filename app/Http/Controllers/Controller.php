@@ -21,4 +21,10 @@ class Controller extends BaseController
             'title' => 'Search Page'
         ]);
     }
+
+    public function result(){
+        return view('hal-menemukan',[
+            'title' => 'result'
+        ]);
+    }
 }
