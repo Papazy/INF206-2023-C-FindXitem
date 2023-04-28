@@ -16,4 +16,10 @@ class BarangController extends Controller
             'title' => 'report Page'
         ]);
     }
+
+    public function kategori(){
+        return view('kategori',[
+            'title' => 'kategori barang'
+        ]);
+    }
 }

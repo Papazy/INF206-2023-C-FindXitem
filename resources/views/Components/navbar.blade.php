@@ -9,7 +9,7 @@
                     <div class="drop-down" id="dropdown">
                     <a href="/search">Mencari</a>
                     <a href="/report">Melaporkan</a>
-                    <a href="#">Kategori</a>
+                    <a href="/kategori">Kategori</a>
                     </div>
                 </div>
             </li>
