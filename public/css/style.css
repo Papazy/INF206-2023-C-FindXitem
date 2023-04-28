@@ -1,0 +1,553 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@200;300;400;700;800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    left:0;
+    top:0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top:0;
+    background-image: url(/img/outer_space_4k.jpg);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(243, 243, 243);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    transition:all 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+    -o-transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    
+  }
+  
+  /* Navbar */
+  
+  .navbar{
+  transition:all 0.3s ease-in-out;
+    display: flex;
+    margin: 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar-navi{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    
+}
+.navbar-items-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.desc{
+    color: white;
+}
+.navbar-item{
+  margin: 0 10px;
+  list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.navbar-item a{
+    padding: 5px 15px;
+    border-radius: 25px;
+    color:white;
+    text-decoration: none;
+}
+
+.navbar-item a:hover{
+    color: white;
+    background-color: rgb(117, 90, 90);
+}
+
+button{
+    min-width: 20px;
+    background: none;
+    border: none;
+}
+.bttn{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 25px;
+    /* color: white; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #53d665;
+    text-decoration: none;
+    
+    color:black;
+}
+
+
+.btn.login{
+background-color: #dadada;
+}
+.btn.login:hover{
+background-color: #b4b4b4;
+}
+
+.btn.daftar{
+    background-color: rgb(107, 107, 107);
+    color: white;
+}
+.btn.daftar:hover{
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+
+.drop-down{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 10px;
+    z-index: 1;
+    flex-direction: column;
+    min-width:140px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: rgba(10, 10, 10, 0.623);
+    
+}
+.drop-down a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+.drop-down a:hover{
+    background-color: #ddd;
+}
+
+.show{
+    display: block;
+
+}
+
+/*  */
+.wrapper{
+    position: relative;
+
+}
+
+.isi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content{
+    margin-top: 75px;
+    
+    /* background-color: #fff; */
+}
+
+.form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.deskripsi-input{
+    font-size: 0.7rem;
+    color:white;
+}
+
+.input_field{
+    margin:15px 5px;
+    color:black;
+}
+
+.input_field label{
+    font-size: 1.2rem;
+    color:white;
+}
+
+.input_field input{
+    width: 30rem;
+    font-size: 1.2rem;
+    color:black;
+    padding:5px 10px;
+    border-radius: 0;
+    border: solid 1px rgb(160, 160, 160);
+}
+
+#submit{
+    background: #1951eb;
+    border-radius: 25px ;
+    border:none ;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+
+}
+#submit:hover{
+    background: #0036c9;
+}
+
+
+.content-not-found, .container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: center;
+}
+
+.container{
+    margin: 50px 70px;
+}
+
+  .img-not-found{
+    width: 400px;
+    filter: drop-shadow(5px 5px 5px #222)
+  }
+  
+  .img-found{
+    max-width: 360px;
+    filter: drop-shadow(5px 5px 5px #222);
+    border-radius:10px;
+}
+
+
+
+
+/* Variable */
+.aggree {
+  background: #09ff00;
+}
+.disaggree {
+  background: #af390a;
+}
+
+.content-not-found{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.img-not-found{
+    width: 400px;
+    filter: drop-shadow(5px 5px 5px #222)
+}
+
+.landing-page {
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    height: 2702px;
+    overflow: hidden;
+    padding: 58px 0;
+    width: 1440px;
+  }
+  
+  .hidden,
+  .hidden * {
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+
+  /*  */
+  .buttonlogin {
+    align-items: flex-start;
+    background-color: #6e40c9;
+    border-radius: 37px;
+    display: flex;
+    height: 46px;
+    justify-content: flex-end;
+    margin-left: 40px;
+    min-width: 107px;
+    padding: 9px 28px;
+  }
+  
+  .login-1 {
+    width: 48px;
+  }
+  
+  .landing-page .login-3 {
+    letter-spacing: 0;
+    min-height: 25px;
+    line-height: normal;
+  }
+  
+  .about-us {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-left: 70px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+  
+  .place {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-left: 544px;
+    min-height: 30px;
+    min-width: 60px;
+  }
+  
+  .buttonsingup {
+    align-items: flex-start;
+    background-color: #f7c873;
+    border-radius: 37px;
+    display: flex;
+    height: 46px;
+    justify-content: flex-end;
+    margin-left: 43px;
+    min-width: 107px;
+    padding: 8px 19px;
+  }
+  .sign-up {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 20px;
+    width: 68px;
+  }
+  
+  .barang {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    margin-left: 70px;
+    min-height: 30px;
+    min-width: 74px;
+  }
+  
+  .find-xitem {
+    color: var(--black);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-bottom: 2px;
+    min-height: 24px;
+    min-width: 105px;
+  }
+  
+  .overlap-group1 {
+    align-self: flex-start;
+    height: 912px;
+    margin-left: -148px;
+    margin-top: 123px;
+    position: relative;
+    width: 1622px;
+  }
+  
+  .buttonmulaicoding-1 {
+    align-items: flex-start;
+    background-color: var(--slimy-green);
+    display: flex;
+    left: 798px;
+    min-width: 139px;
+    padding: 9px 37px;
+    position: absolute;
+    top: 485px;
+  }
+  
+  .landing-page .buttonmulaicoding-2 {
+    border-radius: 37px;
+    height: 46px;
+  }
+  .login-2 {
+    width: 100px;
+  }
+  
+  .rectangle-3 {
+    background-color: #f0f88d;
+    height: 912px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1622px;
+  }
+  
+  .mencari-dan-melapork {
+    left: 798px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 226px;
+    width: 727px;
+  }
+  
+  .laporkan-barang-temuan-anda-disini {
+    left: 798px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 433px;
+    width: 375px;
+  }
+
+  
+  .group-1 {
+    background-image: url(Image/gambar1);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 485px;
+    left: 303px;
+    position: absolute;
+    top: 119px;
+    width: 435px;
+  }
+  
+  .landing-page .flex {
+    align-items: flex-start;
+    display: flex;
+  }
+  
+  .flex-row {
+    gap: 33px;
+    margin-left: 22px;
+    margin-top: 131px;
+    min-width: 1096px;
+  }
+  
+  .rectangle-4 {
+    height: 485px;
+    object-fit: cover;
+    width: 435px;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+    margin-top: 50px;
+    min-height: 238px;
+    width: 628px;
+  }
+  
+  .temukan-barang-anda-disini {
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 22px;
+    min-height: 30px;
+  }
+  
+  .kehilangan-atau-mene {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 120px;
+    width: 628px;
+  }
+  .buttonmulaicoding-container {
+    margin-left: 5px;
+    margin-top: 20px;
+    position: relative;
+    width: 139px;
+  }
+  
+  .buttonmulaicoding {
+    align-items: flex-start;
+    background-color: var(--slimy-green);
+    border-radius: 37px;
+    display: flex;
+    min-width: 139px;
+    height: 46px;
+    left: 0;
+    padding: 9px 50px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* .login {
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 25px;
+    width: 38px;
+  } */
+
+  /* Variables */
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --slimy-green: rgba(40, 170, 38, 1);
+    --purple-heart: rgba(110, 64, 201, 1);
+    --alto: rgba(217, 217, 217, 1);
+    --sunset-pearl: rgba(247, 200, 115, 1);
+    --desert-storm: rgba(248, 248, 248, 1);
+    --white: rgba(255, 255, 255, 1);
+    --font-size-s: 18px;
+    --font-size-m: 20px;
+    --font-size-1: 36px;
+    --font-size-x1: 40px;
+    --font-family-montserrat: "Montserrat";
+    --font-family-poppins: "Poppins";
+    }
+    
+    /* Classes */
+    .poppins-normal-black-36px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-1);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-black-18px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-desert-storm-18px {
+    color: var(--desert-storm);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-black-40px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-x1);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .poppins-normal-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .montserrat-normal-black-20px {
+    color: var(--black);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    font-style: normal;
+    }
