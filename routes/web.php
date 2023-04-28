@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,12 +17,23 @@ use App\Http\Controllers\BarangController;
 */
 
 Route::get('/',[Controller::class, 'showLanding']);
+Route::get('/landing-page',[Controller::class, 'showLanding']);
 
 Route::get('/search', [Controller::class, 'search']);
 
+Route::get('/report', [BarangController::class, 'report']);
 Route::get('/result', [Controller::class, 'result']);
-Route::get('/result2', [Controller::class, 'result']);
-// Route::get
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/verifikasi', [Controller::class, 'verif']);
+Route::get('/result/notfound', [Controller::class, 'notfound']);
+
+Route::get('/login', [LoginController::class, 'login']);
+Route::post('/login', [LoginController::class, 'authenticate']);
+
+
+Route::post('/login/create', [LoginController::class, 'store']);
+
+// Route::get
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
