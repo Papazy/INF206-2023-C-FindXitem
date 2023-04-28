@@ -21,10 +21,24 @@ class Controller extends BaseController
             'title' => 'Search Page'
         ]);
     }
+    
+    
 
     public function result(){
-        return view('hal-menemukan',[
-            'title' => 'result'
+        return view('result',[
+            'title' => 'Hasil'
+        ]);
+    }
+
+    public function verif(){
+        return view('verifikasi',[
+            'title' => 'Verifikasi'
+        ]);
+    }
+
+    public function notfound(){
+        return view('result_no',[
+            'title' => 'Result'
         ]);
     }
 }
