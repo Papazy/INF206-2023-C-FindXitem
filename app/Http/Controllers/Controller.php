@@ -36,7 +36,7 @@ class Controller extends BaseController
     }
 
     public function verif(){
-        return view('verifikasi',[
+        return view('Search.verifikasi',[
             'title' => 'Verifikasi'
         ]);
     }
