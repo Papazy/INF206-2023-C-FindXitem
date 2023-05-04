@@ -22,7 +22,7 @@
                 <p style="text-align: justify;">Terpercaya mengembalikan barang-barang yang hilang. Digunakan oleh kepolisian Indonesia dalam rangka mewujudkan negeri yang aman. Laporkan barang temuanmu disini</p>
                 
                 <br>
-                <button ><a class="bttn" href="hal-pelaporan">Melaporkan</a></button>
+                <button ><a class="bttn" href="{{ url('report') }}">Melaporkan</a></button>
             </div>
             <img src="img/barang-buku.png" alt="Kaca pembesar" style="width:340px">
         </div>
