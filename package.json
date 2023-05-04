@@ -10,10 +10,7 @@
         "bootstrap": "^5.2.3",
         "laravel-vite-plugin": "^0.7.2",
         "sass": "^1.62.1",
-<<<<<<< HEAD
-=======
         "tailwindcss": "^3.3.2",
->>>>>>> main
         "vite": "^4.3.3"
     },
     "dependencies": {
