@@ -19,6 +19,8 @@ use App\Http\Controllers\RegisterController;
 Route::get('/',[Controller::class, 'showLanding']);
 Route::get('/landing-page',[Controller::class, 'showLanding']);
 
+
+
 Route::get('/search', [Controller::class, 'search']);
 Route::get('/search/hasil', [BarangController::class, 'searchResult']);
 
