@@ -21,6 +21,10 @@ Route::get('/landing-page',[Controller::class, 'showLanding']);
 
 Route::get('/search', [Controller::class, 'search']);
 
+Route::get('/kategori', [Controller::class, 'kategory']);
+
+
+
 Route::get('/report', [BarangController::class, 'report']);
 Route::get('/result', [Controller::class, 'result']);
 
