@@ -18,9 +18,12 @@ body{
     font-family: 'Poppins', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< Updated upstream
     background-color: rgb(243, 243, 243);
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Poppins', sans-serif;
+=======
+>>>>>>> Stashed changes
 }
 
 .navbar{
@@ -38,9 +41,15 @@ body{
     display: flex;
 }
 
+<<<<<<< Updated upstream
 
 .desc{
     color: white;
+=======
+.desc{
+    color: white;
+}
+>>>>>>> Stashed changes
 .navbar-item{
     margin: 0 10px;
     list-style: none;
@@ -171,7 +180,10 @@ background-color: #b4b4b4;
     background: #0036c9;
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .content-not-found, .container{
     display: flex;
     align-items: center;
@@ -203,6 +215,7 @@ background-color: #b4b4b4;
 }
 .disaggree {
   background: #af390a;
+<<<<<<< Updated upstream
 }
 
 .content-not-found{
@@ -521,3 +534,6 @@ background-color: #b4b4b4;
     font-weight: 400;
     font-style: normal;
     }
+=======
+}
+>>>>>>> Stashed changes
