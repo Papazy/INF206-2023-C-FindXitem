@@ -2,7 +2,7 @@
     <div class="navbar-logo fs-3" style="cursor:pointer;" onclick="window.location='{{ url("/") }}'">FindXitem</div>
     <div class="navbar-navi">
         <ul class="navbar-items-container">
-            <li class="navbar-item"><a href="#">Home</a></li>
+            <li class="navbar-item"><a href="/">Home</a></li>
             <li class="navbar-item ">
                 <a class="btnDropdown" href="#" onclick="toggle_dropdown()">Barang</a>
                 <div class="wrapper">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </li>
-            <li class="navbar-item"><a href="#">About</a></li>
+            <li class="navbar-item"><a href="/about">About</a></li>
             <button class="btn login me-2 rounded-pill" onclick="window.location='{{ url('/login') }}'">Masuk</button>
             <button class="btn daftar ms-2 rounded-pill" onclick="register()">Daftar</button>
         </ul>
