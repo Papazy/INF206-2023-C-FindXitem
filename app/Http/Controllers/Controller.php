@@ -17,7 +17,7 @@ class Controller extends BaseController
     }
 
     public function search(){
-        return view('hal-pencarian',[
+        return view('Search.hal-pencarian',[
             'title' => 'Search Page'
         ]);
     }
