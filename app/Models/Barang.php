@@ -9,4 +9,8 @@ class Barang extends Model
 {
     use HasFactory;
     protected $table = 'barang'; // untuk menghubungkan ke tabel barang
+
+    protected $guarded = ['id'];
+
+    public $timestamps =true;
 }

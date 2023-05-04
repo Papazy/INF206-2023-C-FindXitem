@@ -22,6 +22,7 @@ Route::get('/landing-page',[Controller::class, 'showLanding']);
 Route::get('/search', [Controller::class, 'search']);
 
 Route::get('/report', [BarangController::class, 'report']);
+Route::post('/report', [BarangController::class, 'store']);
 Route::get('/result', [Controller::class, 'result']);
 
 Route::get('/verifikasi', [Controller::class, 'verif']);
@@ -32,6 +33,8 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 
 
 Route::post('/login/create', [LoginController::class, 'store']);
+
+
 
 // Route::get
 // Auth::routes();
