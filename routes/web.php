@@ -22,6 +22,7 @@ Route::get('/landing-page',[Controller::class, 'showLanding']);
 
 
 Route::get('/search', [Controller::class, 'search']);
+Route::get('/search/hasil', [BarangController::class, 'searchResult']);
 
 Route::get('/kategori', [Controller::class, 'kategory']);
 
@@ -29,6 +30,9 @@ Route::get('/kategori', [Controller::class, 'kategory']);
 
 Route::get('/report', [BarangController::class, 'report']);
 Route::post('/report', [BarangController::class, 'store']);
+Route::get('/report/hasil', [BarangController::class, 'reportResult']);
+
+
 Route::get('/result', [Controller::class, 'result']);
 
 Route::get('/verifikasi', [Controller::class, 'verif']);
