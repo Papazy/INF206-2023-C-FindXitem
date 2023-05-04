@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +10,8 @@
     @section('container')
 
       <div class="kategori">
-        <div class="card1">
+        
+        <div class="card1 shadow-md ...">
           <form>
             <img src="{{ asset('images/cathp.png') }}" alt="Gambar 2" data-src="{{ asset('img/catlost.jpg') }}">
             <h2>Hewan</h2>
@@ -73,34 +73,3 @@
   @endsection
   </body>
 </html>
-=======
-@extends('Layouts.main')
-
-@section('container')
-
-<style>
-    .card1 {
-        background: #f2f2f2; /* warna background */
-        margin-bottom: 20px; /* jarak antar elemen */
-        padding: 10px; /* jarak antara konten dengan batas elemen */
-    }
-</style>
-
-<div class="row">
-
-    <div class="col-12 col-md-4 card1">
-        <div>Hewan</div>
-    </div>
-
-    <div class="col-12 col-md-4 card1">
-        <div>Elektronik</div>
-    </div>
-
-    <div class="col-12 col-md-4 card1">
-        <div> Aksesoris</div>
-    </div>
-
-</div>
-
-@endsection
->>>>>>> main
