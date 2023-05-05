@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('nama');
             $table->string('kategori');
             $table->string('warna_dasar');
-            $table->string('warna_sekunder');
-            $table->string('brand');
+            $table->string('warna_sekunder')->nullable();
+            $table->strin('image')->nullable();
+            $table->string('brand')->nullable();
             $table->string('lokasi');
             $table->date('waktu');
         });
