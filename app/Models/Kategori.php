@@ -9,4 +9,5 @@ class Kategori extends Model
 {
     use HasFactory;
     protected $table = 'kategori'; // untuk menghubungkan ke tabel kategori
+    
 }

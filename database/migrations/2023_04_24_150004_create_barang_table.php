@@ -19,10 +19,13 @@ return new class extends Migration
             $table->string('kategori');
             $table->string('warna_dasar');
             $table->string('warna_sekunder')->nullable();
-            $table->strin('image')->nullable();
+            $table->string('image')->nullable();
             $table->string('brand')->nullable();
             $table->string('lokasi');
             $table->date('waktu');
+            $table->string('nama_penemu');
+            $table->string('noHp');
+            $table->string('email');
         });
     }
 

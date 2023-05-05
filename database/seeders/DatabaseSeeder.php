@@ -25,6 +25,9 @@ class DatabaseSeeder extends Seeder
             'Brand' => 'Realme',
             'Lokasi' => 'Meulaboh',
             'Waktu' => Carbon::now()->toDateTimeString(), // untuk inisiasi waktu sekarang
+            'nama_penemu' => 'Alex',
+            'noHP' => '082267450565',
+            'email' => 'alex@gmail.com'
         ]);
         Barang::create([
             'nama' => 'Dompet Kulit',
@@ -34,6 +37,9 @@ class DatabaseSeeder extends Seeder
             'Brand' => 'Unknown',
             'Lokasi' => 'Banda Aceh',
             'Waktu' => Carbon::now()->toDateTimeString(),
+            'nama_penemu' => 'Alex',
+            'noHP' => '08123456790',
+            'email' => 'alex@gmail.com'
         ]);
         Barang::create([
             'nama' => 'Lucifer T1 TWS',
@@ -43,6 +49,9 @@ class DatabaseSeeder extends Seeder
             'Brand' => 'Black Shark',
             'Lokasi' => 'Lhokseumawe',
             'Waktu' => Carbon::now()->toDateTimeString(),
+            'nama_penemu' => 'Alex',
+            'noHP' => '08123456790',
+            'email' => 'alex@gmail.com'
         ]);
         
     }

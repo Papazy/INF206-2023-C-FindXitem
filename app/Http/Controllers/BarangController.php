@@ -42,8 +42,12 @@ class BarangController extends Controller
     }
     public function searchResult(Request $request){
        
+        $result = Barang::where('nama', 'like', '%' . request('nama') . '%')->get();
+        
+
         return view('Search.hasil',[
             'title' => 'result',
+            'result' => $result
         ]);
         
     }

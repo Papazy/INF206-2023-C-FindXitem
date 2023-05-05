@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Barang extends Model
 {
@@ -11,6 +12,28 @@ class Barang extends Model
     protected $table = 'barang'; // untuk menghubungkan ke tabel barang
 
     protected $guarded = ['id'];
+    public function whatsApp(){
 
-    public $timestamps =true;
+        $now = Carbon::now();
+        $noHP = $this->noHp;
+        $pesan = ' saya ingin menanyakan apakah Anda menemukan barang yang hilang milik saya yaitu '.$this->nama .'. Saya mendengar bahwa barang tersebut mungkin telah ditemukan oleh Anda. Apakah kita dapat berjumpa?';
+
+        if($now->between(Carbon::createFromTime(1,0,0), Carbon::createFromTime(11,0,0) )){
+            $pesan = 'Selamat Pagi,' . $pesan;
+        }elseif($now->between(Carbon::createFromTime(11,1,0), Carbon::createFromTime(15,30,0) )){
+            $pesan = 'Selamat Siang,' . $pesan;
+        }elseif($now->between(Carbon::createFromTime(15,31,0), Carbon::createFromTime(18,30,0) )){
+            $pesan = 'Selamat Sore,' . $pesan;
+        }else{
+            $pesan = 'Selamat Malam,' . $pesan;
+        }
+
+       return 'https://wa.me/'.$noHP.'?text='.urlencode($pesan);
+   }
+
 }
+
+
+
+
+
