@@ -44,8 +44,6 @@ class BarangController extends Controller
        
         $result = Barang::where('nama', 'like', '%' . request('nama') . '%')->get();
         
-        
-        
 
         return view('Search.hasil',[
             'title' => 'result',

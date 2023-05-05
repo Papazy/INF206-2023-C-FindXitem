@@ -14,7 +14,7 @@
             <span>Waktu ditemukan : {{ $result[0]->waktu }}</span>
             <br>
             <p>Apakah ini punya anda ?</p>
-            <a href="/verifikasi" class="bttn text-center mb-3">
+            <a href="{{ route('verifikasi', $result[0]->id) }}" class="bttn text-center mb-3">
                     <button class=" bttn">
                       Ya  
                     </button>
@@ -30,7 +30,7 @@
     </div>
     @else
     <div class="content content-not-found">
-        <img class="img-not-found" src="img/no-result-found.png" alt="No-result-found img">
+        <img class="img-not-found" src="/img/no-result-found.png" alt="No-result-found img">
         <div class="desc">
             <p style="font-size: 2rem;font-weight: 700;">Maaf barang yang anda cari belum ditemukan</p>
             <p>Coba masukkan kata kunci lain tentang barang anda</p>

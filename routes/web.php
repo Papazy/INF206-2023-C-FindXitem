@@ -36,7 +36,7 @@ Route::get('/report/hasil', [BarangController::class, 'reportResult']);
 
 Route::get('/result', [Controller::class, 'result']);
 
-Route::get('/verifikasi', [Controller::class, 'verif']);
+Route::get('/verifikasi/{id}', [Controller::class, 'verif'])->name('verifikasi');
 Route::get('/result/notfound', [Controller::class, 'notfound']);
 
 Route::get('/login', [LoginController::class, 'login']);
