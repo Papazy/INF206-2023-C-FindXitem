@@ -93,7 +93,8 @@ button{
     cursor: pointer;
     background-color: #53d665;
     text-decoration: none;
-    
+    max-width: 130px;
+    text-align: center;
     color:black;
 }
 
