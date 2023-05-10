@@ -31,6 +31,9 @@ class BarangController extends Controller
             "brand" => $request['brand'],
             "lokasi" => $request['lokasi'],
             "waktu" => $request['waktu'],
+            "nama_penemu" =>$request['nama_penemu'],
+            "noHp" => $request['noHp'],
+            "email" => $request['email'],
         ]);
         return redirect('/report/hasil');
     }

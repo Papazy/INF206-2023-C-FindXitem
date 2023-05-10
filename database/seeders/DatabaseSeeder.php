@@ -4,9 +4,10 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use Illuminate\Database\Seeder;
-use App\Models\Barang;
 use Carbon\Carbon;
+use App\Models\Barang;
+use App\Models\Kategori;
+use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -52,6 +53,19 @@ class DatabaseSeeder extends Seeder
             'nama_penemu' => 'Alex',
             'noHP' => '08123456790',
             'email' => 'alex@gmail.com'
+        ]);
+        
+        Kategori::create([
+            'nama' => 'Handphone',
+            'slug' => 'handphone'
+        ]);
+        Kategori::create([
+            'nama' => 'Hewan',
+            'slug' => 'hewan'
+        ]);
+        Kategori::create([
+            'nama' => 'Pakaian',
+            'slug' => 'pakaian'
         ]);
         
     }
