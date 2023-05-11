@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Validation\ValidatesRequests;
+use App\Models\Barang;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
@@ -17,7 +18,7 @@ class Controller extends BaseController
     }
 
     public function search(){
-        return view('hal-pencarian',[
+        return view('Search.hal-pencarian',[
             'title' => 'Search Page'
         ]);
     }
@@ -49,9 +50,13 @@ class Controller extends BaseController
         ]);
     }
 
-    public function verif(){
-        return view('verifikasi',[
-            'title' => 'Verifikasi'
+    public function verif($id){
+
+        $data = Barang::findOrFail($id);
+       
+        return view('Search.verifikasi',[
+            'title' => 'Verifikasi',
+            'result' => $data
         ]);
     }
 

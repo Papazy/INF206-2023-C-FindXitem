@@ -1,6 +1,4 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@200;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@200;300;400;700;800&display=swap');
 
 
 *{
@@ -95,7 +93,8 @@ button{
     cursor: pointer;
     background-color: #53d665;
     text-decoration: none;
-    
+    max-width: 130px;
+    text-align: center;
     color:black;
 }
 
@@ -182,12 +181,12 @@ background-color: #b4b4b4;
     color:white;
 }
 
-.input_field input{
+.input_field .input{
     width: 30rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color:black;
     padding:5px 10px;
-    border-radius: 0;
+    border-radius: 2px;
     border: solid 1px rgb(160, 160, 160);
 }
 
