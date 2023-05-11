@@ -23,26 +23,13 @@ class Controller extends BaseController
         ]);
     }
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public function kategori(){
-        return view('kategori',[
-            'title' => 'kategori barang'
-        ]);
-    }
-=======
-=======
->>>>>>> main
+
+
     public function kategory(){
         return view('kategori',[
             'title' => 'Kategori'
         ]);
     }
-    
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> main
 
     public function result(){
         return view('result',[

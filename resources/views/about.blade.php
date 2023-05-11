@@ -6,7 +6,7 @@
         <div class="kalimat">Website untuk menemukan barang hilang adalah sebuah platform online yang dibuat untuk membantu orang mencari barang yang hilang atau kehilangan milik mereka. Situs web semacam ini dapat memfasilitasi proses pencarian dengan cara mengumpulkan informasi tentang barang yang hilang dan kemudian mempublikasikannya untuk dilihat oleh orang-orang yang mungkin memiliki informasi yang berguna atau bahkan telah menemukannya.</div>
         <div class="anggota">
             <div class="anggota-item">
-              <img src="public/img/foto.png" alt="Foto Fajry" style="width: 200px;">
+              <img src="/img/foto.png" alt="Foto Fajry" style="width: 200px;">
               <span class="anggota-nama">Fajry Ariansyah</span>
               <span class="anggota-nama">2108107010059</span>
             </div>
