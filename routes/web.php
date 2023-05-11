@@ -46,6 +46,7 @@ Route::get('/result/notfound', [Controller::class, 'notfound']);
 
 Route::get('/login', [LoginController::class, 'login']);
 Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 
 Route::post('/login/create', [LoginController::class, 'store']);
