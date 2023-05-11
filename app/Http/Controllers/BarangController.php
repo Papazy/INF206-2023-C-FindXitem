@@ -22,15 +22,25 @@ class BarangController extends Controller
     public function store(Request $request){
 
         
+        if($request->file('image')){
+            $link = 'img/'.time().'-'.$request->image->getClientOriginalName();
+            $request->image->move('storage/img', $link);
+            // $request['image'] = $link;
+            // $request->file('image')->store('img');
+        }
+        
         Barang::create([
             "nama" => $request['nama'],
             "kategori" => $request['kategori'],
             "warna_dasar" => $request['warna_dasar'],
             "warna_sekunder" => $request['warna_sekunder'],
-            "image" => $request['image'],
+            "image" => $link,
             "brand" => $request['brand'],
             "lokasi" => $request['lokasi'],
             "waktu" => $request['waktu'],
+            "nama_penemu" =>$request['nama_penemu'],
+            "noHp" => $request['noHp'],
+            "email" => $request['email'],
         ]);
         return redirect('/report/hasil');
     }

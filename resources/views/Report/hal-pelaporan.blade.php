@@ -3,7 +3,7 @@
 @section('container')
     <div class="content">
         <p style="font-size: 2.5rem;margin-bottom: 20px; color:white">Submit Barang temuan</p>
-        <form action="/report" method="POST">
+        <form action="/report" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-grid">
 
@@ -40,7 +40,7 @@
                 <div class="input_field">
                     <label for="">Foto Barang</label>
                     <p class="deskripsi-input">Opsional | Masukkan Foto Barang</p>
-                    <input type="file" class="bg-white rounded col-md-6" name="image">
+                    <input type="file" class="bg-white rounded col-md-6" id="image" name="image">
                 </div>
             </div>
             
@@ -65,14 +65,12 @@
                 <div class="input_field">
                     <label for="">Nama</label>
                     <br>
-                    <input type="text" class="input form-control" value="" name="nama_pengirirm">
+                    <input type="text" class="input form-control" value="" name="nama_penemu">
                 </div>
                 <div class="input_field">
-                    <label for="" name="no_HP">No HP</label>
-                    
+                    <label for="" name="noHp">No HP</label>
                     <br>
-                    
-                    <input type="text" class="input form-control">
+                    <input type="text" name="noHp" class="input form-control">
                 </div>
                 <div class="input_field">
                     <label for="">Email</label>
