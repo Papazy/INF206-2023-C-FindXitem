@@ -65,14 +65,12 @@
                 <div class="input_field">
                     <label for="">Nama</label>
                     <br>
-                    <input type="text" class="input form-control" value="" name="nama_pengirirm">
+                    <input type="text" class="input form-control" value="" name="nama_penemu">
                 </div>
                 <div class="input_field">
-                    <label for="" name="no_HP">No HP</label>
-                    
+                    <label for="" name="noHp">No HP</label>
                     <br>
-                    
-                    <input type="text" class="input form-control">
+                    <input type="text" name="noHp" class="input form-control">
                 </div>
                 <div class="input_field">
                     <label for="">Email</label>
