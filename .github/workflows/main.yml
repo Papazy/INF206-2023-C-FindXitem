@@ -7,7 +7,7 @@ jobs:
     env:
       DB_DATABASE: laravel
       DB_USERNAME: root
-      DB_PASSWORD: password
+      DB_PASSWORD: 
       BROADCAST_DRIVER: log
     services:
       mysql:
