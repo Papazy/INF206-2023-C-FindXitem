@@ -22,9 +22,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: password
         ports:
           - 3306:3306
-        # Tunggu sampai MySQL siap sebelum menjalankan jobs
-        options: --health-cmd="mysqladmin ping -h localhost" --health-interval=10s --health-timeout=5s --health-retries=3
-
+        
     steps:
       # Step untuk checkout kode repository
       - name: Checkout repository
