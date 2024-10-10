@@ -14,7 +14,7 @@ jobs:
         image: mysql:5.7
         env:
           MYSQL_USER: user
-          MYSQL_PASSWORD: secret
+          MYSQL_PASSWORD: root
           MYSQL_DATABASE: laravel
           MYSQL_ROOT_PASSWORD: root
         ports:
@@ -60,7 +60,7 @@ jobs:
           DB_DATABASE: testdatabase
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
           DB_USER: root
-          DB_PASSWORD: secret
+          DB_PASSWORD: root
         run: php artisan migrate -v
       - name: Test with phpunit
         run: vendor/bin/phpunit --coverage-text
