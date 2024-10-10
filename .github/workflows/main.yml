@@ -13,9 +13,10 @@ jobs:
       mysql:
         image: mysql:5.7
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: false
-          MYSQL_ROOT_PASSWORD: password
+          MYSQL_USER: user
+          MYSQL_PASSWORD: secret
           MYSQL_DATABASE: laravel
+          MYSQL_ROOT_PASSWORD: root
         ports:
           - 3306/tcp
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
@@ -54,9 +55,13 @@ jobs:
       - name: Clear Config
         run: php artisan config:clear
       - name: Run Migration
-        run: php artisan migrate -v
         env:
+          DB_CONNECTION: mysql
+          DB_DATABASE: testdatabase
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
+          DB_USER: root
+          DB_PASSWORD: secret
+        run: php artisan migrate -v
       - name: Test with phpunit
         run: vendor/bin/phpunit --coverage-text
         env:
