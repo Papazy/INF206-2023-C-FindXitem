@@ -48,10 +48,6 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
 
-      # Step untuk menginstal NPM dependencies
-      - name: Install NPM dependencies
-        run: npm install && npm run dev
-
       # Step untuk membuat file .env
       - name: Setup .env file
         run: |
