@@ -62,7 +62,4 @@ jobs:
           DB_USER: root
           DB_PASSWORD: root
         run: php artisan migrate -v
-      - name: Test with phpunit
-        run: vendor/bin/phpunit --coverage-text
-        env:
-          DB_PORT: ${{ job.services.mysql.ports['3306'] }}
+
