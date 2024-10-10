@@ -57,7 +57,7 @@ jobs:
       - name: Run Migration
         env:
           DB_CONNECTION: mysql
-          DB_DATABASE: testdatabase
+          DB_DATABASE: laravel
           DB_PORT: ${{ job.services.mysql.ports['3306'] }}
           DB_USER: root
           DB_PASSWORD: root
